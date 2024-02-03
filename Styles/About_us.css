@@ -1,0 +1,235 @@
+.about-us{
+    /*  margin-top: 70vh;*/ 
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px 0;
+}
+
+.about-us-text, .about-us-img{
+    width: 40%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.about-us-text h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fe6800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about-us-text p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-us-img article{
+    position: relative;    
+    transition: all 0.3s ease-in-out;
+}
+
+.about-us-img article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+   /* filter: drop-shadow(5px 5px 10px #000);  */
+}
+
+.about-us-img article a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    border:1px solid #fe6800;
+    background-color: #fe6800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    transform: translateY(25%);
+    opacity: 0;
+}
+
+.about-us-img article:hover {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+    
+}
+
+.about-us-img article:hover img {
+    opacity: 0.35;
+}
+  
+.about-us-img  article:hover a {
+    opacity: 1;
+    transform: translateY(10%);
+  }
+
+#Info {
+    width: 100%;
+    height: 100%;
+    background-image: url(/Img/Banner3.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.info-bg {
+    width: 100%;
+    height: 100%;
+    background-color: #afc2cd81;
+    position: absolute;
+    z-index: 500;
+}
+
+.info {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.info h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    padding:  0 10px;
+    border-bottom: #fe6800 5px solid;
+    margin-bottom: 20px;
+    transform: translateX(20%);
+}
+
+.values {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.value {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.value h3 {
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    padding: 50% 20px;
+    text-transform: uppercase;
+    width: 20%;
+    border-right: 5px solid #fe6800;
+}
+
+.value h3::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(45deg, transparent 50%, #fe6800 50%); 
+    transform: rotate(45deg);  
+    position: absolute;
+    right: -10px;
+    bottom: 50%;
+    opacity: 0;
+}
+
+.value h3::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #fe6800;  
+    position: absolute;
+    right: -15px;
+    bottom: 49%;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.value p {
+    width: 80%;
+    text-align: justify;
+    padding: 0 50px;
+    font-size: 20px;
+}
+
+#mision-vision{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    padding: 50px;
+}
+
+.mision {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: justify;
+    text-align: left;
+}
+
+.vision {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: justify;
+    text-align: right;
+}
+
+.mision h2, .vision h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding:  0 10px;
+    border-bottom: #fe6800 5px solid;
+}
+
+.mision p, .vision p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 20px;
+}

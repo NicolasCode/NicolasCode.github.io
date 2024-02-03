@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+@import "Icons.css";
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+div {
+    overflow: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+    transition: all 0.3s ease-in-out;
+}
+
+.header {
+    background-color: transparent;
+
+}
+
+.sticky {
+    background-color: #063453;
+}
+
+.Header{
+
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    padding: 0 10%;
+    margin: auto;
+    align-items: center;
+    flex-direction: row;          
+}
+
+
+.Logo{
+    background-color: #fff;
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    padding: 5px;
+}
+
+.Logo img {
+    height: 50px;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.Logo img:hover {
+    transform: scale(1.1);
+}
+
+.Header .nav-links{
+    list-style: none;
+}
+
+.Header .nav-links .selected{
+    transform: scale(1.1);
+}
+.Header .nav-links .selected a{
+    border-bottom: 2px solid #fe6800;
+}
+
+.Header .nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Header .nav-links li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 700;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.Header .nav-links li:hover {
+    transform: scale(1.1);
+}
+.Header .nav-links li:hover a{
+    border-bottom: 2px solid #fe6800;
+}
+
+
