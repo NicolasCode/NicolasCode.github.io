@@ -1,3 +1,39 @@
+.banner {
+    width: 100%;
+    height: 70vh;
+    background-color: #afc2cd81;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#banner {
+    width: 100%;
+    height: 70vh;
+    background-image: url(/Img/Banner.png);  
+    background-size: cover; 
+}
+
+.banner h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fe6800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banner p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .about-us{
     /*  margin-top: 70vh;*/ 
     height: 100%;
@@ -205,8 +241,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: justify;
-    text-align: left;
+    text-align: justify;
 }
 
 .vision {
@@ -214,7 +251,10 @@
     display: flex;
     flex-direction: column;
     justify-content: justify;
-    text-align: right;
+    align-items: flex-end;
+    width: 100%;
+    text-align:justify;
+    position: relative;
 }
 
 .mision h2, .vision h2 {
@@ -222,14 +262,18 @@
     font-weight: 300;
     color: #000;
     text-transform: uppercase;
+    text-align: center;
+    position: relative;
     margin-bottom: 20px;
     padding:  0 10px;
     border-bottom: #fe6800 5px solid;
+    width: 200px;
 }
 
 .mision p, .vision p {
     font-size: 20px;
     font-weight: 300;
+    width: 80%;
     color: #000;
     margin-bottom: 20px;
 }
