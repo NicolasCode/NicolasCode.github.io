@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styles/Header.css">
-    <script src="/Js/header.js"></script>
-
     <link rel="stylesheet" href="/Styles/Footer.css">
     <link rel="stylesheet" href="/Styles/Home.css">
     <title>Document</title>
@@ -13,26 +11,40 @@
 <header  class="header">
     <div class="Header">
         <div class="Logo">
-            <a href="#"><img src="/Img/logo.png" alt="Logo EIM automatic"></a>
+            <a href="Home.html" class="logo-img"><img src="/Img/Logo_Black.png" alt="Logo EIM automatic"></a>
+            <a href="Home.html" class="logo-text">EIM Automatic</a>
         </div>
         <nav>
             <ul class="nav-links">
                 <li class="selected"><a  href="#">Inicio</a></li>
                 <li><a href="About_us.html">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li> 
-                <li><a href="#">Contacto</a></li>
+                <li><a href="Services.html">Servicios</a></li> 
+                <li><a href="Contact.html">Contacto</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <body>
     <section id="banner">
-        <div class="banner"></div>
-        <div class="banner-text">
-            <h1>EIM Automatic</h1>
-            <p>Comprometidos con el futuro</p>
-            <a href="About_us.html">Saber más</a>
+        <div class="slider-banner">
+            <section class="banner-section" id="one">
+                <div class="banner">
+                    <h1>Metalmecanica</h1>
+                    <p>Instalación de sistemas de tuberias y conductos metalicos.</p>
+                    <a href="Services.html">Saber más</a>
+                </div>
+            </section>
+            <section class="banner-section" id="two">
+                <div class="banner">
+                    <h1>Metalmecanica</h1>
+                    <p>Fabricación de equipos y maquinaria especializada</p>
+                    <a href="Services.html">Saber más</a>
+                </div>   
+            </section>
         </div>
+        <div class="btn-left"><</div>
+        <div class="btn-right">></div>
+        <div class="cont"></div>
     </section>
     <section>
         <div class="about-us">
@@ -43,7 +55,7 @@
             </div>
             <div class="about-us-img">
                 <article>
-                    <img src="/Img/logo.png" alt="">
+                    <img src="/Img/logo.png" alt="Esta es una pendejada por ahora">
                     <a href="About_us.html"> Leer más</a>
                 </article>
             </div>
@@ -55,7 +67,7 @@
             <div class="services-gallery">
                 <div class="image-gallery">
                     <article>
-                        <img src="/Img/Automatizacion.jpg" alt=""> 
+                        <img src="/Img/fabrica-ingenieria-fabricacion-industrias-produccion-metalmecanica_116317-23529.avif" alt=""> 
                         <div class="hover">
                             <h2>Automatizacion industrial</h2>
                             <ul>
@@ -75,7 +87,7 @@
                 </div>
                 <div class="image-gallery">
                     <article>
-                        <img src="/Img/Metalmecanica.jpg" alt=""> 
+                        <img src="/Img/hombre-trabajando-fabrica-metal-soldando-trozo-riel-herramientas-especiales_613910-17144.avif" alt=""> 
                         <div class="hover">
                             <h2>Metalmecanica</h2>
                             <ul>
@@ -171,4 +183,8 @@
     </div>
     <h3 class="final">&copy EIM Automatic</h3>
 </footer>
+
+<script src="/Js/header.js"></script>
+<script src="/Js/slider.js"></script>
+
 </html>

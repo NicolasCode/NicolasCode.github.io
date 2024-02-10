@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styles/Header.css">
+    <script src="/Js/header.js"></script>
+
     <link rel="stylesheet" href="/Styles/Contact.css">
     <link rel="stylesheet" href="/Styles/Footer.css">
     <title>Document</title>
 </head>
-<header class="sticky">
+<header class="header">
     <div class="Header">
         <div class="Logo">
-            <a href="Home.html"><img src="/Img/Logo.png" alt="Logo EIM automatic"></a>
+            <a href="Home.html" class="logo-img"><img src="/Img/Logo_Black.png" alt="Logo EIM automatic"></a>
+            <a href="Home.html" class="logo-text">EIM automatic</a>
         </div>
         <nav>
             <ul class="nav-links">
@@ -24,15 +27,40 @@
     </div>
 </header>
 <body>
-    <div class="spacer"></div>
+    <section id="banner">
+        <div class="banner"></div>
+        <div class="banner-text">
+            <h1>Contactenos</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, et!</p>
+            <a href="About_us.html">Saber más</a>
+        </div>
+    </section>
+    <section id="contact">
+        <img src="/Img/wave.png" alt="">
+        <div class="contact">
+            <h2> Contactanos</h2>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <span class="phone ico"></span>
+                    <p>+57 322 283 5439</p>
+                    <p>+57 317 499 9488</p>
+                </div>
+                <div class="contact-card">
+                    <span class="loc ico"></span>
+                    <p> CL 44 SUR NO. 72 B 70 </p>
+                    <p> Bogotá D.C. - Colombia </p>
+                </div>
+                <div class="contact-card">
+                    <span class="mail ico"></span>
+                    <p> eimautomatic@gmail.com </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="form">
         <div class="form">
             <div class="contact-info">
-                <h3> Contacto </h3>
-                <ul>
-                    <li><i class="gg-phone"></i> +57 322 283 5439</li>
-                    <li><i class="gg-mail"></i> +57 317 499 9488</li>
-                    <li><span><img src="/Img/email.png" alt=""></span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.630742821737!2d-74.1530686857368!3d4.566394996909799!2m3!1f0!2f39.99999863088663!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a3b0b0b0b0b%3A0x9e9b6b0b0b0b0b0b!2sCl.%2044%20Sur%20%2372b-70%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1598456904249!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="mapa"></iframe>
             </div>
             <div class="contact-form">
                 <span class="circle one"></span>

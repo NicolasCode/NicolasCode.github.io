@@ -168,7 +168,7 @@
     position: absolute;
     right: -10px;
     bottom: 50%;
-    opacity: 0;
+    opacity: 1;
 }
 
 .value h3::before{
@@ -180,7 +180,7 @@
     right: -15px;
     bottom: 49%;
     border-radius: 50%;
-    opacity: 1;
+    opacity: 0;
 }
 
 .value p {

@@ -1,5 +1,132 @@
-.spacer{
-    padding-top: 100px;
+
+.banner{
+    background-image: url(/Img/fabrica-ingenieria-fabricacion-industrias-produccion-metalmecanica_116317-23529.avif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.banner::after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #afc2cd59;
+}
+
+.banner-text{
+  /*  z-index: -1; 
+    position: fixed;*/ 
+    display: flex;
+    text-align: center;
+    padding: 50px;
+    height: 65vh;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.banner-text h1{
+    font-size: 80px;
+    font-weight: 700;
+    color: #fe6800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.banner-text p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.banner-text a{
+    border:3px solid #fe6800;
+    color: #fe6800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+
+.banner-text a:hover{
+    background-color: #fe6800;
+    color: #fff;
+}
+
+
+#contact {
+    margin-top: 0;
+    padding: 50px;
+    height: 500px;
+    background-color: #fff;
+    position: relative;
+}
+
+#contact img {
+    position: absolute;
+    top: -80%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    margin-top: 0;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60%;
+}
+
+.contact h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fe6800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contact-card {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fe6a006b;
+    border-bottom: 5px solid #fe6800;
+}
+
+.ico {
+    margin-bottom: 20px;
+}
+
+#form {
+    background-color: #fff;
+    padding: 50px 0;
 }
 
 .form {
@@ -185,33 +312,12 @@ textarea.input {
 .contact-info {
     position: relative;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 2.2rem 2.3rem;
+    width: 100%;
 }
 
-.contact-info img {
-    width: 50px;
-    color: #fe6800;
+.contact-info iframe {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
 }
 
-.contact-info h3 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #00498a;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.contact-info p {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: 300;
-    color: #000;
-    margin-bottom: 20px;
-    text-align: center;
-}

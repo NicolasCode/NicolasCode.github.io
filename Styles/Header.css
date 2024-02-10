@@ -20,47 +20,86 @@ div {
 header {
     position: fixed;
     width: 100%;
+    height: 100px;
     z-index: 1001;
     transition: all 0.3s ease-in-out;
 }
 
-.header {
-    background-color: transparent;
+.header .Header {
+    padding: 20px 20px;
+    border-bottom: 2px solid #fe6800;
+}
+
+.header .Logo .logo-img{
+    opacity: 0;
+}
+
+.sticky .Logo .logo-img{
+    opacity: 1;
 
 }
+.header .Logo .logo-text{
+    opacity: 1;
+}
+
+.sticky .Logo .logo-text{
+    opacity: 0;
+}
+
 
 .sticky {
     background-color: #063453;
 }
 
 .Header{
-
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 10%;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    height: 85px;
-    padding: 0 10%;
+    height: 100px;
     margin: auto;
     align-items: center;
     flex-direction: row;          
 }
 
-
-.Logo{
-    background-color: #fff;
-    border-radius: 50%;
-    height: auto;
-    width: auto;
-    padding: 5px;
+.sticky .Logo img{
+    filter: brightness(0) invert(1);
+    background-color: transparent;
 }
 
+
 .Logo img {
-    height: 50px;
+    height: 100px;
     width: auto;
     transition: all 0.3s ease-in-out;
 }
 
 .Logo img:hover {
+    filter: invert(56%) sepia(44%) saturate(7139%) hue-rotate(1deg) brightness(103%) contrast(106%); 
     transform: scale(1.1);
+}
+
+.Logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+.logo-text {
+    position: absolute;
+    width: auto;
+    top : 20px;
+    left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .Header .nav-links{
