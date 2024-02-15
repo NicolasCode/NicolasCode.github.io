@@ -27,14 +27,15 @@ footer {
 .footer-logo {
     background-color: #fff;
     border-radius: 50%;
-    height: auto;
-    width: auto;
+    height: 320px;
+    width: 320px;
     padding: 5px;
     margin: 0 50px;
 }
 
 .footer-logo img {
     height: 300px;
+    width: 300px;
     aspect-ratio: 1/1;
 }
 
