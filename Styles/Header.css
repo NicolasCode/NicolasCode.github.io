@@ -69,14 +69,17 @@ header {
     background-color: transparent;
 }
 
+.sticky .Logo {
+    transition: all 0.3s ease-in-out;
+}
+
 
 .Logo img {
     height: 100px;
     width: auto;
-    transition: all 0.3s ease-in-out;
 }
 
-.Logo img:hover {
+.sticky .Logo:hover {
     filter: invert(56%) sepia(44%) saturate(7139%) hue-rotate(1deg) brightness(103%) contrast(106%); 
     transform: scale(1.1);
 }

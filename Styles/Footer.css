@@ -83,3 +83,9 @@ footer {
     text-align: center;
     color: #fe6800;
 }
+
+@media (width < 1158px){
+    .footer-logo{
+        display: None;
+    }
+}
